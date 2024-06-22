@@ -23,4 +23,18 @@ function createGrid(gridSize) {
     }
 }
 
+function changeGridSize() {
+    const newGridSize = prompt('Enter size for the new grid:');
+
+    if (!(newGridSize <= 100 && newGridSize >= 4)) {
+        alert('Value must be between 4 and 100!');
+        return;
+    }
+    
+    // Remove old grid
+    document.querySelector('.container').innerHTML = '';
+
+    createGrid(newGridSize);
+}
+
 createGrid(16);
