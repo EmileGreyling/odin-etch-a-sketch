@@ -18,6 +18,11 @@ h1 {
     text-align: center;
 }
 
+#buttons {
+    display: flex;
+    gap: 10px;
+}
+
 button {
     background-color: #6575a2;
     border: none;

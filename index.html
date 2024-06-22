@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Etch-a-Sketch</title>
-</head>
-<body>
-    <h1>Etch-a-Sketch</h1>
-    <button onclick="changeGridSize()">Change Grid Size</button>
-    <div class="container"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Etch-a-Sketch</title>
+    </head>
+    <body>
+        <h1>Etch-a-Sketch</h1>
+        <div id="buttons">
+            <button onclick="changeGridSize()">Change Grid Size</button>
+            <button onclick="randomColor = false">Default Color</button>
+            <button onclick="randomColor = true">Random Colors</button>
+            <button onclick="window.location.reload()">Reset</button>
+        </div>
 
-    <script src="app.js"></script>
-</body>
+        <div class="container"></div>
+
+        <script src="app.js"></script>
+    </body>
 </html>
