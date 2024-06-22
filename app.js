@@ -1,12 +1,15 @@
-function createGrid(rows, columns) {
+function createGrid(gridSize) {
     const gridContainer = document.querySelector(".container");
 
     // Create grid cells
-    for (let i = 0; i < rows; i++) {
+    for (let i = 0; i < gridSize; i++) {
         const row = document.createElement("div");
+        row.classList.add('row');
 
-        for (let j = 0; j < columns; j++) {
+        for (let j = 0; j < gridSize; j++) {
             const cell = document.createElement("div");
+            cell.style.width = `${(850) / (gridSize)}px`;
+            cell.style.height = `${(850) / (gridSize)}px`;
             cell.classList.add("cell");
 
             cell.addEventListener('mouseover', () => {
@@ -20,4 +23,4 @@ function createGrid(rows, columns) {
     }
 }
 
-createGrid(16, 16);
+createGrid(16);

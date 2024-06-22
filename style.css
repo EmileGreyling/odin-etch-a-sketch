@@ -20,15 +20,18 @@ h1 {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    width: 850px;
+    height: 850px;
     margin: 20px;
-    width: 940px;
-    height: 940px;
+}
+
+.row {
+    display: flex;
 }
 
 .cell {
     border: 2px solid #6575a2;
     border-radius: 5px;
-    padding: 25px;
+    box-sizing: border-box;
 }
